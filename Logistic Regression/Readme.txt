@@ -1,3 +1,5 @@
+Usage:
+
 obj=logistic()
 obj.loadData('path to train.csv',16,False,True)
 obj.loadData('path to test.csv',16,False,False)
