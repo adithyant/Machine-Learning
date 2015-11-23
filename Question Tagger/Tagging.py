@@ -39,7 +39,7 @@ class Tagging():
     __threshold=0.6
     __numberOfTags=5
     #Passed input.Punctuations removes and question split. 
-	def __init__(self,question):
+    def __init__(self,question):
         self.question=re.sub("[^a-zA-Z]"," ",question).split()
         
     #Stop words are removed
@@ -52,7 +52,7 @@ class Tagging():
         [[self.__similarity.append(similar) for similar in Tagging.__model.most_similar(word,topn=Tagging.__numberOfTags)]for word in self.question]
             
     #sorting and returning top N tags
-	def __topTags(self):
+    def __topTags(self):
         self.tags=[];
         for i in range(0,Tagging.__numberOfTags):
             self.tags.append(sorted(self.__similarity,key=lambda x: x[1],reverse=True)[i][0])
