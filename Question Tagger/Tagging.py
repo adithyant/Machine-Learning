@@ -4,7 +4,7 @@ Spyder Editor
 
 This is a temporary script file.
 """
-#Last Updated By: Adithya Tirumale
+
 #Last Updated Date:7/8/2015
 
 import re
