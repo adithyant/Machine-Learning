@@ -144,10 +144,3 @@ def getConsfusionMatrix(y_a,y_p):
     
 
 
-x = np.loadtxt('C:\\Users\\adi\\Downloads\\zoo-train.csv',delimiter=',',dtype=int)
-x1 = np.loadtxt('C:\\Users\\adi\\Downloads\\zoo-train.csv',delimiter=',',dtype=int)
-
-dtree=buildDecisionTree(x,depth=0,tcol=16)
-an=predict(dtree,x)
-print an
-print getConsfusionMatrix(x[:,16],an)
