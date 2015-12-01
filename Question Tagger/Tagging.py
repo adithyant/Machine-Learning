@@ -34,7 +34,7 @@ class Tagging():
                 
                 "whom","why","will","with","would","yet","you","your","?"]
     
-    __model=word2vec.Word2Vec.load_word2vec_format("C:/Users/Adithya/Desktop/GoogleNews-vectors-negative300.bin.gz",binary=True)
+    __model=word2vec.Word2Vec.load_word2vec_format("GoogleNews-vectors-negative300.bin.gz",binary=True)
     __model.init_sims(replace=True)
     __threshold=0.6
     __numberOfTags=5
